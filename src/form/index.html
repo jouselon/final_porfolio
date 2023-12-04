@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2> </h2>
+    </header>
+
+<main>
+    <form action="/" method="GET">
+
+        <section>
+            <h2>당신에 대해 알려주세요</h2>
+            <ul>
+                <li>
+                    <label for="username">이름을 알려주세요</label>
+                    <input type="text" id="username" name="username" placeholder="이름" required>
+                </li>
+
+                <li>
+                    <label for="email">이메일을 알려주세요</label>
+                    <input type="email" id="email" name="email" placeholder="이메일" required>
+                </li>
+
+                <li>
+                    <label for="phone">핸드폰 번호를 알려주세요</label>
+                    <input type="tel" id="phone" name="phone" placeholder="핸드폰번호" required minlength="8">
+                </li>
+
+                <li>
+                    <label for="birth">생년월일을 알려주세요</label>
+                    <input type="date" id="birth" name="birth" required>
+                </li>
+
+                <li>
+                    <label for="message">하고싶은 말을 적어주세요</label>
+                    <textarea id="message" name="message" placeholder="여기에 적어주세요" required minlength="20" maxlength="300" rows="5"></textarea>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <label for="channel">저를 어떤 경로로 알게 되었나요?</label>
+            <select id="channel" name="channel" required>
+                <option value="search">검색</option>
+                <option value="word-of-mouth">지인소개</option>
+                <option value="social-media">SNS</option>
+                <option value="other">기타</option>
+            </select>
+        </section>
+
+
+
+        <section>
+            <h2>저희 소식을 알려드릴게요!</h2>
+            <ul>
+                <li class="inline-control">
+                    <input type="radio" id="reply-phone" name="reply" value="phone" required>
+                    <label for="reply-phone">전화</label>
+                </li>
+
+                <li class="inline-control">
+                    <input type="radio" id="reply-message" name="reply" value="message" required>
+                    <label for="reply-message">문자</label>
+                </li>
+
+                <li class="inline-control">
+                    <input type="radio" id="reply-none" name="reply" value="none" required>
+                    <label for="reply-none">고맙지만 사양할게요</label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="inline-control">
+
+                    <input type="checkbox" id="accept-terms" name="accept-terms" required>
+                    <label for="accept-terms">약관에 동의하세요?</label>
+
+        </section>
+
+        <section id="form-actions">
+            <button type="reset" class="btn-empty">다시 처음부터 입력할래요</button>
+            <button type="submit" class="btn-filled">이제 제출할게요.</button>
+        </section>
+
+
+    </form>
+</main>
+
+
+
+</body>
+</html>
